@@ -10,7 +10,8 @@ public class Moovingobject : MonoBehaviour
     [SerializeField] float speedy;
     [SerializeField] float amplitudey;
     [SerializeField] GameObject bulletPrefab;
-    //[SerializeField] float bulletSpeed = 3.0f;
+    [SerializeField] float shootInterval;
+    private float shootTimer;
 
     void Start()
     {
@@ -34,11 +35,14 @@ public class Moovingobject : MonoBehaviour
 
     void shooting()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        shootTimer += Time.deltaTime;
+
+        if (shootTimer >= shootInterval)
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            //Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-            //bulletRb.AddForce(transform.up * bulletSpeed);
+
+            shootTimer = 0.0f; // タイマーをリセット
         }
     }
 

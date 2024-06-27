@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed; // 弾の初期速度
     [SerializeField] Vector3 direction; // 弾の移動方向
-    private bool isGravityEnabled = false; // 重力の有効/無効のフラグ
+    //private bool isGravityEnabled = false; // 重力の有効/無効のフラグ
 
     void Start()
     {
@@ -44,7 +44,7 @@ public class Bullet : MonoBehaviour
     // 重力を有効にするメソッド
     private void EnableGravity()
     {
-        isGravityEnabled = true;
+        //isGravityEnabled = true;
         GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 }

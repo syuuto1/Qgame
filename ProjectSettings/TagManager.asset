@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Line
   - Destroy wall
+  - Ground
   layers:
   - Default
   - TransparentFX
