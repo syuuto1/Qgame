@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed; // 弾の初期速度
-    [SerializeField] Vector3 direction; // 弾の移動方向
+    [SerializeField] Vector2 direction; // 弾の移動方向
     //private bool isGravityEnabled = false; // 重力の有効/無効のフラグ
 
     void Start()

@@ -7,6 +7,8 @@ TagManager:
   - Line
   - Destroy wall
   - Ground
+  - Bullet
+  - Tracking bullet
   layers:
   - Default
   - TransparentFX

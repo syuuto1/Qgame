@@ -11,6 +11,7 @@ public class Moovingobject : MonoBehaviour
     [SerializeField] float amplitudey;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] float shootInterval;
+
     private float shootTimer;
 
     void Start()

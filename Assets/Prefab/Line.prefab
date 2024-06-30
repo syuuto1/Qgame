@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5506985015820323972}
   - component: {fileID: 2935442557309903648}
   - component: {fileID: 5148493680678568538}
-  - component: {fileID: 697610444482159429}
+  - component: {fileID: 4839175134653597813}
   m_Layer: 0
   m_Name: Line
   m_TagString: Line
@@ -204,15 +204,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &697610444482159429
+--- !u!114 &4839175134653597813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8610101392191450057}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb4b82d225897f4fa448e17d7d0ac7f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e24d604c00710047a168438d72c43ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ColorSprite:
+  - {fileID: 2100000, guid: fb7dd419019b0494283c1148a7551353, type: 2}
+  - {fileID: 2100000, guid: 799d3a736b4454b4393bd529d3e85f98, type: 2}
+  - {fileID: 2100000, guid: af22170d9fcecf2468dfb512aa089002, type: 2}
+  Count: 2

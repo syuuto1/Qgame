@@ -68,6 +68,8 @@ public class Linetool : MonoBehaviour
             currentRigidbody.simulated = true; // Rigidbody2Dのシミュレーションを有効にする
         }
     }
+
+    
 }
 
 /*public class Linetool : MonoBehaviour //PolygonCollider2D
