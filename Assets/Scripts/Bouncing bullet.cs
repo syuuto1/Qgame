@@ -26,7 +26,10 @@ public class Bouncingbullet : MonoBehaviour
             {
                 bulletCollider.enabled = false; // Collider‚ğ–³Œø‚É‚·‚é
                 // ‚·‚è”²‚¯‚½Œã‚É•K—v‚È‘¼‚Ìˆ—‚ğ‚±‚±‚É’Ç‰Á‚Å‚«‚Ü‚·
+                Invoke(nameof(BulletCollider), 1.5f);
+                
             }
+
         }
 
         if (collision.collider.CompareTag("Destroy wall"))
@@ -34,6 +37,11 @@ public class Bouncingbullet : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    private void BulletCollider()
+    {
+        bulletCollider.enabled = true;
     }
 
 }
