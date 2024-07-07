@@ -15,7 +15,7 @@ public class Countdown : MonoBehaviour
     void Start()
     {
         timeText = GetComponent<Text>();
-        countdownSeconds = countdownMinutes * 10 + 1;
+        countdownSeconds = countdownMinutes * 60 + 1;
     }
 
     void Update()
