@@ -221,3 +221,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 799d3a736b4454b4393bd529d3e85f98, type: 2}
   - {fileID: 2100000, guid: af22170d9fcecf2468dfb512aa089002, type: 2}
   Count: 2
+  effectPrefab: {fileID: 4676117351768295636, guid: e9b4f9c09298fd14fb9c9752b32da850, type: 3}
