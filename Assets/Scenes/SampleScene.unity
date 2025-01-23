@@ -880,7 +880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1421377238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1010,6 +1010,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 799d3a736b4454b4393bd529d3e85f98, type: 2}
   - {fileID: 2100000, guid: af22170d9fcecf2468dfb512aa089002, type: 2}
   Count: 2
+  effectPrefab: {fileID: 4676117351768295636, guid: e1c7ddf9fc7620d4597d74e3a7fa882b, type: 3}
 --- !u!1 &1546550713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedx: 0
   amplitudex: 0
-  speedy: 2
+  speedy: 0
   amplitudey: 4.5
   bulletPrefab: {fileID: 735856644571450389, guid: cbc59ec1ad61f654bb009412f7558497, type: 3}
   shootInterval: 2
