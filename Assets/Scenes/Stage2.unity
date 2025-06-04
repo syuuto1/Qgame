@@ -1165,6 +1165,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 799d3a736b4454b4393bd529d3e85f98, type: 2}
   - {fileID: 2100000, guid: af22170d9fcecf2468dfb512aa089002, type: 2}
   Count: 2
+  effectPrefab: {fileID: 4676117351768295636, guid: e1c7ddf9fc7620d4597d74e3a7fa882b, type: 3}
 --- !u!61 &1615786670
 BoxCollider2D:
   m_ObjectHideFlags: 0
