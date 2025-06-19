@@ -246,10 +246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e44493814bcfb4ba1d92549308dc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedx: 2
-  amplitudex: 8
-  speedy: 0
-  amplitudey: 0
+  speed_x: 1
+  distance_x: 8
+  speed_y: 0
+  distance_y: 0
   bulletPrefab: {fileID: 2299742180541632531, guid: 8f965a1f57e98554fb1178e3b76726cd, type: 3}
   shootInterval: 2
 --- !u!212 &223133160
@@ -1056,10 +1056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e44493814bcfb4ba1d92549308dc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedx: 3
-  amplitudex: -8
-  speedy: 0
-  amplitudey: 0
+  speed_x: 3
+  distance_x: 8
+  speed_y: 0
+  distance_y: 0
   bulletPrefab: {fileID: 2299742180541632531, guid: 8f965a1f57e98554fb1178e3b76726cd, type: 3}
   shootInterval: 2
 --- !u!212 &1501484567
