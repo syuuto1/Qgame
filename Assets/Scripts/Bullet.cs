@@ -5,28 +5,27 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] float speed; // 弾の初期速度
-    [SerializeField] Vector2 direction; // 弾の移動方向
-    //private bool isGravityEnabled = false; // 重力の有効/無効のフラグ
+    [SerializeField] float speed;      //弾の初期速度
+    [SerializeField] Vector2 direction;// 弾の移動方向
 
     void Start()
     {
-        // 初期速度と方向で弾を発射する
+        //初期速度と方向で弾を発射
         GetComponent<Rigidbody2D>().velocity = direction * speed;
     }
 
-    // 弾が何かに衝突したときの処理
+    /// <summary>
+    /// 弾が何かに衝突したときの処理
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Line"))
         {
-            // Lineタグが付いたオブジェクトに当たったら速度を0にする
+            //Lineタグが付いたオブジェクトに当たったら速度を0
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            // 方向ベクトルも0にする（停止する）
-            direction = Vector2.zero;
-
-            // 重力を有効にする
-            EnableGravity();
+            direction = Vector2.zero;// 方向ベクトルも0(停止）
+            EnableGravity();//重力を有効にする
         }
 
         if (other.CompareTag("Destroy wall"))
@@ -35,16 +34,20 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    // 外部から弾の移動方向を設定するためのメソッド
+    /// <summary>
+    /// 弾の移動方向を設定
+    /// </summary>
+    /// <param name="dir">方向</param>
     public void SetDirection(Vector3 dir)
     {
         direction = dir.normalized;
     }
 
-    // 重力を有効にするメソッド
+    /// <summary>
+    /// 重力を有効
+    /// </summary>
     private void EnableGravity()
     {
-        //isGravityEnabled = true;
         GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 }
