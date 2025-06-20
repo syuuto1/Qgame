@@ -19,7 +19,7 @@ public class Bouncingbullet : MonoBehaviour
     /// <summary>
     /// ‰½‚©‚ÉÕ“Ë‚µ‚½‚Æ‚«‚Ìˆ—
     /// </summary>
-    /// <param name="collision"></param>
+    /// <param name="collision">ÚG•¨‚Ìî•ñ</param>
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ground"))

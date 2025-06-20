@@ -15,9 +15,9 @@ public class Bullet : MonoBehaviour
     }
 
     /// <summary>
-    /// ’e‚ª‰½‚©‚ÉÕ“Ë‚µ‚½‚Æ‚«‚Ìˆ—
+    /// ’e‚ªÕ“Ë‚µ‚½‚Æ‚«‚Ìˆ—
     /// </summary>
-    /// <param name="other"></param>
+    /// <param name="other">ÚG•¨‚Ìî•ñ</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Line"))

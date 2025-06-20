@@ -11,9 +11,9 @@ public class Linedestroy : MonoBehaviour
     public GameObject effectPrefab;         //エフェクトのプレハブ
 
     /// <summary>
-    /// 何かに衝突したときの処理
+    /// 弾に衝突したときの処理
     /// </summary>
-    /// <param name="collision"></param>
+    /// <param name="collision">衝突時の情報</param>
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Bullet"))
