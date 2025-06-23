@@ -31,7 +31,7 @@ public class Linetool : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0)) //マウスが離されたとき
         {
-            EnableRigidbodySimulation(); //重力の有効
+            EnableRigidbody(); //重力の有効
         }
     }
 
@@ -84,7 +84,7 @@ public class Linetool : MonoBehaviour
     /// <summary>
     /// 線の物理シミュレーションを有効
     /// </summary>
-    void EnableRigidbodySimulation()
+    void EnableRigidbody()
     {
         if (Rigidbody != null)
         {
