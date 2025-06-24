@@ -28,5 +28,10 @@ public class Countdown : MonoBehaviour
         {
             SceneManager.LoadScene("Clear");
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Stageselect");
+        }
     }
 }
